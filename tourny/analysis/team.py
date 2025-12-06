@@ -28,6 +28,7 @@ def getRoundProbablities(tournament, teamName, numSimulations=100000):
                         
     return {team: count/numSimulations for team, count in roundCounts.items()}
 
+#helper function
 def getRoundKeys(tournament):
     
     tournament.runTournament()
@@ -37,6 +38,7 @@ def getRoundKeys(tournament):
 
     return ['No Wins'] + [f'Round {i+1}' for i in range(numRounds-1)] + ['Undefeated']
 
+#helper function
 def getRoundWinnerNames(currentRound):
     return [match.winner.name for match in currentRound.matches]
 

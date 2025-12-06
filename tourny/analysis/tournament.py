@@ -15,8 +15,10 @@ def getWinnerProbabilities(tournament, numSimulations=100000):
 
     return {team: count/numSimulations for team, count in winCounts.items()}
 
+#helper function
 def getTeamNames(tournament):
     return [team.name for team in tournament.teams]
 
+#helper function
 def initializeWinCounts(teamNames):
     return dict.fromkeys(teamNames, 0)
