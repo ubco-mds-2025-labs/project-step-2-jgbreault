@@ -23,7 +23,7 @@ class TestTeam(ut.TestCase):
         
     # Not needed
     @classmethod
-    def setUpClass(cls):
+    def tearDownClass(cls):
         pass
         
     # Not needed

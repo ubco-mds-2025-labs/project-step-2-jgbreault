@@ -29,7 +29,7 @@ class TestFoundation(ut.TestCase) : #test class
         
     # Not needed
     @classmethod
-    def setUpClass(cls):
+    def tearDownClass(cls):
         pass
     
     def test_completedTournament_random(self):

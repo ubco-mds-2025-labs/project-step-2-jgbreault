@@ -27,7 +27,7 @@ class TestTournament(ut.TestCase):
         
     # Not needed
     @classmethod
-    def setUpClass(cls):
+    def tearDownClass(cls):
         pass
     
     def test_helper_functions(self):
