@@ -8,7 +8,7 @@ from tests.visualization.TestAnalysis import TestAnalysis as TestAnalysisViz
 def test_suite():
     suite = unittest.TestSuite()
     result = unittest.TestResult()
-    
+
     suite.addTest(TestFoundation('test_completedTournament_random'))
     suite.addTest(TestFoundation('test_completedTournament_similar'))
     suite.addTest(TestFoundation('test_completedTournament_opposite'))
@@ -22,6 +22,7 @@ def test_suite():
     
     suite.addTest(TestTournamentViz('test_add_round_edges'))
     suite.addTest(TestTournamentViz('test_append_edge'))
+    suite.addTest(TestTournamentViz('test_get_new_file_name'))
     
     suite.addTest(TestAnalysisViz('test_plot_pie_tournament'))
     suite.addTest(TestAnalysisViz('test_plot_pie_team'))
