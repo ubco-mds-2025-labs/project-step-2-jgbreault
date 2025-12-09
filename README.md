@@ -1,3 +1,8 @@
+## GROUP 15 
+## Names:
+## Andre Gnandt
+## Jamie Breault
+
 # tourny - Tournament Simulator
 
 A Python package to simulate single-elimination tournaments.
