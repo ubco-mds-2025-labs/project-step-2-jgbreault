@@ -4,7 +4,7 @@ import random
 
 import unittest as ut
 
-class TestFoundation(ut.TestCase) : #test class
+class test_foundation(ut.TestCase) : #test class
     def setUp(self):
 
         self.list32_sorted = hockey

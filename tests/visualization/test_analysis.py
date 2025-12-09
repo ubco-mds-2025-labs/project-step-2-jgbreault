@@ -7,7 +7,7 @@ from tourny.analysis.team import *
 
 import unittest as ut
 
-class TestAnalysis(ut.TestCase):
+class test_analysis(ut.TestCase):
 
     def setUp(self):
         self.tourny = Tournament(chess)

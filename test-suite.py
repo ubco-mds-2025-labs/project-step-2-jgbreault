@@ -1,18 +1,18 @@
 import unittest
-from tests.structure.TestFoundation import TestFoundation
-from tests.analysis.TestTournament import TestTournament as TestTournamentAnalysis
-from tests.analysis.TestTeam import TestTeam as TestTeamAnalysis
-from tests.visualization.TestTournament import TestTournament as TestTournamentViz
-from tests.visualization.TestAnalysis import TestAnalysis as TestAnalysisViz
+from tests.structure.test_foundation import test_foundation
+from tests.analysis.test_tournament import test_tournament as TestTournamentAnalysis
+from tests.analysis.test_team import test_team as TestTeamAnalysis
+from tests.visualization.test_tournament import test_tournament as TestTournamentViz
+from tests.visualization.test_analysis import test_analysis as TestAnalysisViz
 
 def test_suite():
     suite = unittest.TestSuite()
     result = unittest.TestResult()
 
-    suite.addTest(TestFoundation('test_completedTournament_random'))
-    suite.addTest(TestFoundation('test_completedTournament_similar'))
-    suite.addTest(TestFoundation('test_completedTournament_opposite'))
-    suite.addTest(TestFoundation('test_teamListFunctions'))
+    suite.addTest(test_foundation('test_completedTournament_random'))
+    suite.addTest(test_foundation('test_completedTournament_similar'))
+    suite.addTest(test_foundation('test_completedTournament_opposite'))
+    suite.addTest(test_foundation('test_teamListFunctions'))
 
     suite.addTest(TestTournamentAnalysis('test_helper_functions'))
     suite.addTest(TestTournamentAnalysis('test_get_winner_probabilities'))

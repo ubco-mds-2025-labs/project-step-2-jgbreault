@@ -4,7 +4,7 @@ from tourny.analysis.team import *
 
 import unittest as ut
 
-class TestTeam(ut.TestCase):
+class test_team(ut.TestCase):
     
     def setUp(self):
 

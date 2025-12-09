@@ -5,7 +5,7 @@ import numpy as np
 
 import unittest as ut
 
-class TestTournament(ut.TestCase):
+class test_tournament(ut.TestCase):
     def setUp(self):
 
         self.teamName = "Toronto Maple Leafs"
