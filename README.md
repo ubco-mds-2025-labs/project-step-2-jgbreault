@@ -1,7 +1,7 @@
 ## GROUP 15 
 ## Names:
-## Andre Gnandt
-## Jamie Breault
+## Andre Gnandt 59616136
+## Jamie Breault 26478172
 
 # tourny - Tournament Simulator
 
